@@ -143,10 +143,10 @@ function getBook(id) {
   return data.find((d) => d.id === id);
 }
 
+const book = getBook(3);
 /*
 // Destructing of array and objects
 
-const book = getBook(3);
 
 // const title = book.title;
 // const author = book.author;
@@ -336,3 +336,6 @@ async function getTodos() {
 const todos = getTodos();
 console.log(todos);
 console.log("jonas");
+
+const {title, author} = book
+console.log(title,author);
